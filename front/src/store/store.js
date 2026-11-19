@@ -22,7 +22,10 @@ const configurationPersistance = {
   whitelist: ["favoris"],
 };
 
-const reducerPersiste = persistReducer(configurationPersistance, reducerPrincipal);
+const reducerPersiste = persistReducer(
+  configurationPersistance,
+  reducerPrincipal
+);
 
 export const store = configureStore({
   reducer: reducerPersiste,
@@ -35,11 +38,6 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store);
-
-
-
-
-
 
 // import { configureStore } from "@reduxjs/toolkit";
 
