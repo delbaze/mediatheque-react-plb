@@ -5,7 +5,6 @@ function FournisseurFavoris({ children }) {
   const [favoris, setFavoris] = useState(() => {
     return JSON.parse(localStorage.getItem("favoris")) || [];
   });
-  console.log("favoris", favoris);
   const basculerFavori = (id) => {
     setFavoris((actuels) => {
       const resultat = actuels.includes(id)

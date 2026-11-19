@@ -11,6 +11,9 @@ import { RouterProvider } from "react-router/dom";
 import FournisseurFavoris from "./contextes/FournisseurFavoris";
 import FournisseurTheme from "./contextes/FournisseurTheme";
 import FournisseurAuth from "./contextes/FournisseurAuth";
+import { persistor, store } from "./store/store";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -26,13 +29,17 @@ function App() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <FournisseurTheme>
-          <FournisseurAuth>
-            <FournisseurFavoris>
-              <RouterProvider router={routeur} />
-            </FournisseurFavoris>
-          </FournisseurAuth>
-        </FournisseurTheme>
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <FournisseurTheme>
+              <FournisseurAuth>
+                <FournisseurFavoris>
+                  <RouterProvider router={routeur} />
+                </FournisseurFavoris>
+              </FournisseurAuth>
+            </FournisseurTheme>
+          </PersistGate>
+        </Provider>
       </QueryClientProvider>
     </>
   );
