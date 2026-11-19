@@ -1,0 +1,47 @@
+:root {
+  --fond: #f7f7f5;
+  --surface: #ffffff;
+  --texte: #1f2328;
+  --discret: #6b7280;
+  --accent: #2f6fde;
+  --danger: #c0392b;
+  --bordure: #e2e2e2;
+  font-family: system-ui, sans-serif;
+  color: var(--texte);
+  background: var(--fond);
+}
+
+:root[data-theme='sombre'] {
+  --fond: #16181d;
+  --surface: #20232a;
+  --texte: #e6e6e6;
+  --discret: #9aa0a6;
+  --accent: #6ea8fe;
+  --danger: #ff6b6b;
+  --dangerglobal: #8f0505;
+  --bordure: #33363d;
+}
+
+body { margin: 0; }
+a { color: var(--accent); }
+.page { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+.grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+.carte { background: var(--surface); border: 1px solid var(--bordure); border-radius: 8px; padding: 1rem; }
+.carte h3 { margin-top: 0; }
+.discret { color: var(--discret); font-size: 0.9rem; }
+.badge { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.8rem; background: var(--bordure); }
+.badge-succes { background: #d1f2dd; color: #14532d; }
+.badge-alerte { background: #fde2e1; color: #7f1d1d; }
+.barre { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
+.espace { flex: 1; }
+.champ { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.8rem; }
+.erreur { color: var(--danger); font-size: 0.85rem; }
+.erreur-globale { color: var(--dangerglobal); font-size: 0.85rem; }
+button { cursor: pointer; padding: 0.4rem 0.8rem; border-radius: 6px; border: 1px solid var(--bordure); background: var(--surface); color: var(--texte); }
+button.principal { background: var(--accent); border-color: var(--accent); color: #fff; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+input, select, textarea { padding: 0.4rem; border-radius: 6px; border: 1px solid var(--bordure); background: var(--surface); color: var(--texte); font: inherit; }
+nav.entete { display: flex; gap: 1rem; align-items: center; padding: 0.8rem 1.5rem; background: var(--surface); border-bottom: 1px solid var(--bordure); }
+nav.entete a { color: var(--texte); text-decoration: none; }
+nav.entete a.active { color: var(--accent); font-weight: 600; }
+.active { font-weight: bold;}

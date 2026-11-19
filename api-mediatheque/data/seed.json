@@ -1,0 +1,35 @@
+{
+  "livres": [
+    { "id": 1, "titre": "Le Petit Prince", "auteur": "Antoine de Saint-Exupéry", "annee": 1943, "genre": "Conte", "exemplaires": 3, "resume": "Un aviateur échoué dans le désert rencontre un petit garçon venu d'une autre planète." },
+    { "id": 2, "titre": "L'Étranger", "auteur": "Albert Camus", "annee": 1942, "genre": "Roman", "exemplaires": 2, "resume": "Meursault, employé de bureau à Alger, traverse la vie avec une indifférence qui finit par le perdre." },
+    { "id": 3, "titre": "Fondation", "auteur": "Isaac Asimov", "annee": 1951, "genre": "Science-fiction", "exemplaires": 2, "resume": "Un mathématicien prévoit la chute de l'Empire galactique et tente d'en réduire les conséquences." },
+    { "id": 4, "titre": "Dune", "auteur": "Frank Herbert", "annee": 1965, "genre": "Science-fiction", "exemplaires": 1, "resume": "Sur la planète désertique Arrakis, la famille Atréides affronte complots et prophéties." },
+    { "id": 5, "titre": "Les Misérables", "auteur": "Victor Hugo", "annee": 1862, "genre": "Roman", "exemplaires": 2, "resume": "Le destin de Jean Valjean, ancien forçat, dans la France du XIXe siècle." },
+    { "id": 6, "titre": "Le Nom de la rose", "auteur": "Umberto Eco", "annee": 1980, "genre": "Policier", "exemplaires": 1, "resume": "Une série de meurtres dans une abbaye bénédictine en 1327." },
+    { "id": 7, "titre": "Les dix petits", "auteur": "Agatha Christie", "annee": 1939, "genre": "Policier", "exemplaires": 2, "resume": "Dix inconnus invités sur une île disparaissent un à un." },
+    { "id": 8, "titre": "Le Seigneur des anneaux", "auteur": "J. R. R. Tolkien", "annee": 1954, "genre": "Fantasy", "exemplaires": 2, "resume": "Frodon doit détruire l'Anneau unique avant que Sauron ne le retrouve." },
+    { "id": 9, "titre": "1984", "auteur": "George Orwell", "annee": 1949, "genre": "Science-fiction", "exemplaires": 3, "resume": "Winston Smith vit sous la surveillance permanente de Big Brother." },
+    { "id": 10, "titre": "Madame Bovary", "auteur": "Gustave Flaubert", "annee": 1857, "genre": "Roman", "exemplaires": 1, "resume": "Emma Bovary s'ennuie dans sa vie de province et rêve d'une autre existence." },
+    { "id": 11, "titre": "Le Hobbit", "auteur": "J. R. R. Tolkien", "annee": 1937, "genre": "Fantasy", "exemplaires": 2, "resume": "Bilbon Sacquet part à l'aventure avec treize nains pour reprendre un trésor gardé par un dragon." },
+    { "id": 12, "titre": "Vingt mille lieues sous les mers", "auteur": "Jules Verne", "annee": 1870, "genre": "Aventure", "exemplaires": 2, "resume": "Le professeur Aronnax découvre les fonds marins à bord du Nautilus du capitaine Nemo." }
+  ],
+  "adherents": [
+    { "id": 1, "prenom": "Marie", "nom": "Curie", "email": "marie.curie@exemple.fr", "dateInscription": "2024-01-15", "actif": true },
+    { "id": 2, "prenom": "Louis", "nom": "Pasteur", "email": "louis.pasteur@exemple.fr", "dateInscription": "2024-03-02", "actif": true },
+    { "id": 3, "prenom": "Simone", "nom": "Veil", "email": "simone.veil@exemple.fr", "dateInscription": "2024-06-20", "actif": true },
+    { "id": 4, "prenom": "Victor", "nom": "Schoelcher", "email": "victor.schoelcher@exemple.fr", "dateInscription": "2025-02-11", "actif": false },
+    { "id": 5, "prenom": "Olympe", "nom": "de Gouges", "email": "olympe.degouges@exemple.fr", "dateInscription": "2025-05-30", "actif": true },
+    { "id": 6, "prenom": "Jean", "nom": "Jaurès", "email": "jean.jaures@exemple.fr", "dateInscription": "2025-09-08", "actif": true },
+    { "id": 7, "prenom": "Ada", "nom": "Lovelace", "email": "ada.lovelace@exemple.fr", "dateInscription": "2026-01-19", "actif": true },
+    { "id": 8, "prenom": "Alan", "nom": "Turing", "email": "alan.turing@exemple.fr", "dateInscription": "2026-04-07", "actif": false }
+  ],
+  "emprunts": [
+    { "id": 1, "livreId": 4, "adherentId": 1, "dateEmprunt": "2026-10-01", "dateRetourPrevue": "2026-10-22", "dateRetour": null },
+    { "id": 2, "livreId": 3, "adherentId": 1, "dateEmprunt": "2026-10-25", "dateRetourPrevue": "2026-11-15", "dateRetour": null },
+    { "id": 3, "livreId": 1, "adherentId": 2, "dateEmprunt": "2026-09-10", "dateRetourPrevue": "2026-10-01", "dateRetour": "2026-09-28" },
+    { "id": 4, "livreId": 6, "adherentId": 3, "dateEmprunt": "2026-11-02", "dateRetourPrevue": "2026-11-23", "dateRetour": null },
+    { "id": 5, "livreId": 9, "adherentId": 5, "dateEmprunt": "2026-10-12", "dateRetourPrevue": "2026-11-02", "dateRetour": null },
+    { "id": 6, "livreId": 8, "adherentId": 1, "dateEmprunt": "2026-08-01", "dateRetourPrevue": "2026-08-22", "dateRetour": "2026-08-20" },
+    { "id": 7, "livreId": 12, "adherentId": 7, "dateEmprunt": "2026-11-05", "dateRetourPrevue": "2026-11-26", "dateRetour": null }
+  ]
+}
